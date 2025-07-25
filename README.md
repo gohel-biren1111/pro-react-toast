@@ -18,12 +18,15 @@ A professional React toast notification library with TypeScript support, multipl
 - 🎪 **Animations** - Smooth enter/exit animations
 - 🎛️ **Stack Control** - Limit maximum toasts shown
 - ⏱️ **Auto Dismiss** - Configurable auto-close with progress bar
-  -🧩 **Easy to Use** – Simple and powerful flexibility
+- 🧩 **Easy to Use** – Simple and powerful flexibility
 
-**🚀 Live Demo**
+## 🚀 Live Demo
 
-🚀 **[Live Demo](https://pro-react-toast.vercel.app/)**
-📦 **[View on npm](https://www.npmjs.com/package/pro-react-toast)**
+- **Coming Soon...**
+
+<!-- 🚀 **[Live Demo](https://pro-react-toast.vercel.app/)** -->
+
+<!-- 📦 **[View on npm](https://www.npmjs.com/package/pro-react-toast)** -->
 
 ## 📦 Installation
 
