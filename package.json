@@ -1,6 +1,6 @@
 {
   "name": "pro-react-toast",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A professional React toast notification library with TypeScript support, themes, and animations",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -27,16 +27,16 @@
     "scss",
     "themes"
   ],
-  "author": "Your Name",
+  "author": "Biren Gohel",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/pro-react-toast.git"
+    "url": "https://github.com/gohel-biren1111/pro-react-toast.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/pro-react-toast/issues"
+    "url": "https://github.com/gohel-biren1111/pro-react-toast.git"
   },
-  "homepage": "https://github.com/yourusername/pro-react-toast#readme",
+  "homepage": "https://github.com/gohel-biren1111/pro-react-toast.git",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"

@@ -1,10 +1,12 @@
-# 💎 Pro React Toast
+# 💎 Pro React Toast 💎
 
 A professional React toast notification library with TypeScript support, multiple themes, position control, and smooth animations.
 
 [![npm version](https://badge.fury.io/js/pro-react-toast.svg)](https://badge.fury.io/js/pro-react-toast)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+
+<!-- ![Pro React Toast Preview](https://raw.githubusercontent.com/gohel-biren1111/pro-react-toast/master/ProReactToast.png) -->
 
 ## ✨ Features
 
@@ -20,7 +22,7 @@ A professional React toast notification library with TypeScript support, multipl
 - ⏱️ **Auto Dismiss** - Configurable auto-close with progress bar
 - 🧩 **Easy to Use** – Simple and powerful flexibility
 
-## 🚀 Live Demo
+## 🚀 Live Demo and Documentation
 
 - **Coming Soon...**
 
@@ -271,13 +273,14 @@ At **pro-react-toast**, we believe in **building with the community**.
 Have an idea, improvement, or feature request? We’re all ears!
 
 We welcome feedback, discussions, and collaboration to make the package more powerful and flexible for everyone.
-Please feel free to submit a Pull Request.
+
+<!-- Please feel free to submit a Pull Request.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+5. Open a Pull Request -->
 
 ## 📄 License
 
