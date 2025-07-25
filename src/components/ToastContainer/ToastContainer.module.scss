@@ -1,0 +1,162 @@
+/* src/components/ToastContainer/ToastContainer.module.scss */
+
+.container {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+
+  > * {
+    pointer-events: auto;
+  }
+
+  // Top positions
+  &.top_left {
+    top: 20px;
+    left: 20px;
+  }
+
+  &.top_center {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.top_right {
+    top: 20px;
+    right: 20px;
+  }
+
+  // Middle positions
+  &.middle_left {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  &.middle_center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.middle_right {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  // Bottom positions
+  &.bottom_left {
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &.bottom_center {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &.bottom_right {
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.overflow {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #6b7280;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  margin-bottom: 8px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  .dark & {
+    color: #d1d5db;
+    background-color: rgba(31, 41, 55, 0.9);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 640px) {
+  .container {
+    &.top_left,
+    &.middle_left,
+    &.bottom_left {
+      left: 16px;
+    }
+
+    &.top_right,
+    &.middle_right,
+    &.bottom_right {
+      right: 16px;
+    }
+
+    &.top_center,
+    &.middle_center,
+    &.bottom_center {
+      left: 50%;
+      right: auto;
+    }
+
+    &.top_left,
+    &.top_center,
+    &.top_right {
+      top: 16px;
+    }
+
+    &.bottom_left,
+    &.bottom_center,
+    &.bottom_right {
+      bottom: 16px;
+    }
+  }
+}
+
+// Animation support for different positions
+.container:not(.bottom_left):not(.bottom_center):not(.bottom_right) {
+  > * {
+    animation: slideInFromTop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+.container.bottom_left,
+.container.bottom_center,
+.container.bottom_right {
+  > * {
+    animation: slideInFromBottom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
